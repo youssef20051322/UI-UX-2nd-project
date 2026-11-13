@@ -45,10 +45,10 @@ body{
     color: rgb(52, 52, 238);
     border-radius: 999px;
     border: var(--border);
+    transition: transform 0.3s;
 }
 .navbar .navbar-btn:hover button{ 
-position:relative;top:10px;
-transition:0.3s;
+    transform: translateY(10px);
 }
 .section-home{
     background-color: #836700;
@@ -108,6 +108,7 @@ transition:0.3s;
     box-shadow: var(--box-sh);
     /* margin: 10px 40px; */
     margin-bottom:20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .section-home .home-inner .home-desc .home-desc-btns img{
 width: 2rem;height:2rem;
@@ -118,10 +119,7 @@ width: 2rem;height:2rem;
 }
 .section-home .home-inner .home-desc .home-desc-btns button:hover{
     box-shadow: none;
-    position:relative;
-    top:4px;left:4px;
-    transition:box-shadow 0s;
-    transition:top 0.3s;transition:left 0.3s;
+    transform: translate(4px, 4px);
 }
 .section-home .home-inner .home-pic{
 width:48%;
@@ -131,13 +129,11 @@ align-items: flex-start;
 img{
     width:80%;
     box-shadow: var(--box-sh);
+    transition: transform 0.3s;
 }
 }
 .section-home .home-inner .home-pic img:hover{
-position:relative;
-bottom:5px;
-right:5px;
-transition:0.3s;
+    transform: translate(-5px, -5px);
 }
 .section-latest{    
     background-color:  #1d1f20;
@@ -191,6 +187,7 @@ transition:0.3s;
  padding:15px; 
  margin-top: var(--marg);  
  box-shadow: var(--box-sh);
+ transition: transform 0.3s, box-shadow 0.3s;
 }
 .section-latest-left-card .latest-card-pic{
     width:29%;
@@ -218,6 +215,7 @@ align-items: flex-start;
 }
 .section-latest-left-card .latest-card-desc .latest-card-desc-tittle-1,.latest-card-desc-tittle-2,.latest-card-desc-tittle-3{
 color:white;margin-bottom: 10px;
+transition: color 0.3s;
 }
 .section-latest-left-card .latest-card-desc .latest-card-desc-info{
     color:#e8e6e3;
@@ -244,23 +242,17 @@ color:white;margin-bottom: 10px;
 color:red;
 }
 .section-latest-left-card:hover{
- box-shadow: 8px 8px black;
-    position:relative;
-    bottom:4px;right:4px;
-    transition:box-shadow 0s;
-    transition:bottom 0.3s;transition:right 0.3s;   
+    box-shadow: 8px 8px black;
+    transform: translate(-4px, -4px);
 }
 .section-latest-left-card:hover .latest-card-desc .latest-card-desc-tittle-1{
     color:red;
-    transition:0.3s;
 }
 .section-latest-left-card:hover .latest-card-desc .latest-card-desc-tittle-2{
     color:rgb(6, 84, 110);
-    transition:0.3s;
 }
 .section-latest-left-card:hover .latest-card-desc .latest-card-desc-tittle-3{
     color:rgb(165, 18, 165);
-    transition:0.3s;
 }
 .section-latest-left .section-latest-left-btn{
     background-color: black;
@@ -269,6 +261,7 @@ color:red;
     padding:10px;
     align-self: center;
     margin-top:10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .section-latest-left-btn .latest-left-btn-sign{
     color:white;
@@ -276,11 +269,8 @@ color:red;
     font-weight:900;
 }
 .section-latest-left .section-latest-left-btn:hover{
-     box-shadow: none;
-    position:relative;
-    top:4px;left:4px;
-    transition:box-shadow 0s;
-    transition:top 0.3s;transition:left 0.3s;   
+    box-shadow: none;
+    transform: translate(4px, 4px);
 }
 .section-latest-right .latest-right-top{
     background-color: #1d1f20;
@@ -311,19 +301,17 @@ color:red;
     }
     h4{
         margin:8px 0;
+        transition: color 0.3s;
     }
 }
 .latest-right-top .latest-right-top-desc-1 h4:hover{
     color:red;
-    transition:0.3s;
 }
 .latest-right-top .latest-right-top-desc-2 h4:hover{
      color:rgb(6, 84, 110);
-    transition:0.3s;
 }
 .latest-right-top .latest-right-top-desc-3 h4:hover{
     color:rgb(165, 18, 165);
-    transition:0.3s;
 }
 .latest-right-bottom{
     background-color: #1d1f20;
@@ -354,6 +342,7 @@ color:red;
     background-color: #1d1f20;
     width:175%;
     margin-bottom:10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 .latest-right-bottom-cards .latest-right-bottom-card-1{
     background-color:yellowgreen;
@@ -365,44 +354,29 @@ color:red;
     background-color:#68023a;
 }
 .latest-right-bottom-cards .latest-right-bottom-card-1:hover{
-background-color:rgb(65, 65, 3);
-position:relative;
-bottom:4px;right:4px;
-box-shadow: var(--box-sh);
-transition:0.3s;
-transition: box-shadow 0;
+    background-color:rgb(65, 65, 3);
+    transform: translate(-4px, -4px);
+    box-shadow: var(--box-sh);
 }
 .latest-right-bottom-cards .latest-right-bottom-card-2:hover{
-background-color:#02341d;
-position:relative;
-bottom:4px;right:4px;
-box-shadow: var(--box-sh);
-transition:0.3s;
-transition: box-shadow 0;
+    background-color:#02341d;
+    transform: translate(-4px, -4px);
+    box-shadow: var(--box-sh);
 }
 .latest-right-bottom-cards .latest-right-bottom-card-3:hover{
-background-color:rgb(53, 2, 53);
-position:relative;
-bottom:4px;right:4px;
-box-shadow: var(--box-sh);
-transition:0.3s;
-transition: box-shadow 0;
+    background-color:rgb(53, 2, 53);
+    transform: translate(-4px, -4px);
+    box-shadow: var(--box-sh);
 }
 .latest-right-bottom-cards .latest-right-bottom-card-4:hover{
-background-color:rgb(6, 84, 110);
-position:relative;
-bottom:4px;right:4px;
-box-shadow: var(--box-sh);
-transition:0.3s;
-transition: box-shadow 0;
+    background-color:rgb(6, 84, 110);
+    transform: translate(-4px, -4px);
+    box-shadow: var(--box-sh);
 }
 .latest-right-bottom-cards .latest-right-bottom-card-5:hover{
-background-color:#32276f;
-position:relative;
-bottom:4px;right:4px;
-box-shadow: var(--box-sh);
-transition:0.3s;
-transition: box-shadow 0;
+    background-color:#32276f;
+    transform: translate(-4px, -4px);
+    box-shadow: var(--box-sh);
 }
 .section-authors{
     background-color: #836700;
@@ -436,6 +410,7 @@ transition: box-shadow 0;
     flex-direction: column;
     align-items: center;
     background-color: #5d5200;
+    transition: transform 0.3s;
 }
 .auth-card-desc{
     line-height: 1.2rem;
@@ -451,6 +426,7 @@ transition: box-shadow 0;
     flex-direction: column;
     align-items: center;
     background-color:#02341d;
+    transition: transform 0.3s;
 }
 .auth-cards-wrapper .auth-card-3{
     width:32%;
@@ -463,6 +439,7 @@ transition: box-shadow 0;
     flex-direction: column;
     align-items: center;
     background-color: #68023a;
+    transition: transform 0.3s;
 }
 .auth-cards-wrapper .auth-role{
     padding: 0.4rem;
@@ -479,6 +456,7 @@ transition: box-shadow 0;
 .auth-cards-wrapper .auth-card-tittle{
     font-weight: 700;
     font-size:2rem;margin:0.5rem 0;
+    transition: color 0.3s;
 }
 .auth-cards-wrapper .auth-card-subtittle{
     font-weight: 700;
@@ -502,41 +480,34 @@ transition: box-shadow 0;
     padding:0.5rem;
     text-align: center;
     font-size: 1.5rem;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 .auth-card-1:hover,.auth-card-2:hover,.auth-card-3:hover{
-    position: relative;
-    bottom:.3125rem;right:.3125rem;
-    transition:0.3s;
+    transform: translate(-.3125rem, -.3125rem);
 }
 .auth-card-1:hover .auth-card-tittle{
     color: #ff2a34;
-    transition:0.3s;
 }
 .auth-card-2:hover .auth-card-tittle{
     color: rgb(16, 113, 146);
-    transition:0.3s;
 }
 .auth-card-3:hover .auth-card-tittle{
     color: rgb(165, 18, 165);
-    transition:0.3s;
 }
 .auth-icons-1:hover{
     background-color: rgb(9, 55, 205);
-    transition:0.3s;
     box-shadow:.3125rem .3125rem black;
-    position:relative;bottom:.3125rem;right:.3125rem;
+    transform: translate(-.3125rem, -.3125rem);
 }
 .auth-icons-2:hover{
     background-color: rgb(16, 147, 191);
-    transition:0.3s;
     box-shadow:.3125rem .3125rem black;
-    position:relative;bottom:.3125rem;right:.3125rem;
+    transform: translate(-.3125rem, -.3125rem);
 }
 .auth-icons-3:hover{
     background-color: rgb(165, 18, 165);
-    transition:0.3s;
     box-shadow:.3125rem .3125rem black;
-    position:relative;bottom:.3125rem;right:.3125rem;
+    transform: translate(-.3125rem, -.3125rem);
 }
 .section-comm{
     background-color: #1d1f20;
@@ -600,16 +571,14 @@ transition: box-shadow 0;
     font-size: 1.28rem;
     font-weight: 900;
     color:white;
+    transition: transform 0.3s, box-shadow 0.3s;
     i{
         margin-right: 0.8rem;
     }
 }
 .comm-inner-left-btn:hover{
     box-shadow: none;
-    position:relative;
-    top:4px;left:4px;
-    transition:box-shadow 0s;
-    transition:top 0.3s;transition:left 0.3s;   
+    transform: translate(4px, 4px);
 }
 .comm-inner-right{
     width:38%;
@@ -712,13 +681,12 @@ transition: box-shadow 0;
     font-weight: 900;
     color:white;
     align-self: center;
+    transition: transform 0.3s, background-color 0.3s;
 }
 .end-inner-top-right-btn:hover{
     box-shadow: none;
-    position:relative;
     background-color:gold;
-    bottom:4px;right:4px;
-    transition:0.3s;   
+    transform: translate(-4px, -4px);
 }
 .end-inner-bottom{
     display: flex;
